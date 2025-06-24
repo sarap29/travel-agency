@@ -771,6 +771,7 @@ li.filters-list__item {
   justify-content: space-between;
   gap: 1em;
   padding: 1.25em;
+  background: #cde8e38c;
 }
 
 .trip__actions-left {
