@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aventuras sin fronteras</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="imagenes/favicon.png" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/ec87d1cadc.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link href="styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="topbar__info">
+        <span>📍 45 New Eskaton Road, Australia</span>
+        <span>|</span>
+        <span>🕒 Sun to Friday: 8.00 am - 7.00 pm</span>
+      </div>
+      <div class="topbar__links">
+        <span>🌐 USD</span>
+        <a href="#">FAQ</a>
+        <a href="#">Support</a>
+        <a href="#">Sign In / Register</a>
+      </div>
+    </div>
+
+    <div class="nav-container">
+      <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo de la Empresa" />
+      </div>
+      <nav>
+        <ul>
+
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Aventura</a></li>
+          <li><a href="#">Alojamiento</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacta</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+  </header>
+
+
+
+
+  <!-- Hero Section with Carousel -->
+  <section class="hero carousel">
+    <div class="hero__slides">
+      <div class="hero__slide active" style="background-image: url('imagenes/maldivas.webp')">
+        <div class="hero__overlay">
+          <div class="hero__content">
+            <p class="hero__subtitle">Get unforgettable pleasure with us</p>
+            <h1 class="hero__title">Natural Wonder<br />Of The World</h1>
+            <div class="hero__buttons">
+              <a href="#" class="button button--primary">Explore Tours →</a>
+              <a href="#" class="button button--secondary">Our Services →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide" style="background-image: url('imagenes/africa.webp')">
+        <div class="hero__overlay">
+          <div class="hero__content">
+            <p class="hero__subtitle">Discover magical landscapes</p>
+            <h1 class="hero__title">Adventure Awaits<br />All Around</h1>
+            <div class="hero__buttons">
+              <a href="#" class="button button--primary">Explore Tours →</a>
+              <a href="#" class="button button--secondary">Our Services →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide" style="background-image: url('imagenes/selva.webp')">
+        <div class="hero__overlay">
+          <div class="hero__content">
+            <p class="hero__subtitle">Make memories with us</p>
+            <h1 class="hero__title">Your Journey<br />Begins Here</h1>
+            <div class="hero__buttons">
+              <a href="#" class="button button--primary">Explore Tours →</a>
+              <a href="#" class="button button--secondary">Our Services →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel__control prev">&#10094;</button>
+    <button class="carousel__control next">&#10095;</button>
+  </section>
+
+
+  <section class="title-section">
+    <h1 class="title-section__title">Vive tus propias aventuras</h1>
+    <p class="title-section__parragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. </p>
+  </section>
+
+
+  <!-- Seccion Viajes -->
+  <section class="trips section" id="trips">
+    <div class="trips__wrapper container grid">
+
+      <!-- Filtros -->
+      <aside class="trips__filters">
+        <h2 class="filters__title">Filtrar mi búsqueda</h2>
+
+        <!-- Destinos -->
+        <div class="filters__block">
+          <button class="filters__toggle"><i class="fa-solid fa-earth-americas"></i>Destinos <i
+              class="fa-solid fa-chevron-right"></i></button>
+          <ul class="filters__list">
+            <li><label><input type="checkbox" name="destino" value="Indonesia"> Indonesia</label></li>
+            <li><label><input type="checkbox" name="destino" value="Maldivas"> Maldivas</label></li>
+            <li><label><input type="checkbox" name="destino" value="Marruecos"> Marruecos</label></li>
+            <li><label><input type="checkbox" name="destino" value="Tailandia"> Tailandia</label></li>
+          </ul>
+        </div>
+
+        <!-- Aventura -->
+        <div class="filters__block">
+          <button class="filters__toggle"><i class="fa-solid fa-mountain"></i>Aventura <i
+              class="fa-solid fa-chevron-right"></i></button>
+          <ul class="filters__list aventura-list">
+            <li><label><input type="checkbox" name="actividad" value="Buceo"> Buceo</label></li>
+            <li><label><input type="checkbox" name="actividad" value="Snorkel"> Snorkel</label></li>
+            <li><label><input type="checkbox" name="actividad" value="Surf"> Surf</label></li>
+            <li><label><input type="checkbox" name="actividad" value="Volcanes"> Volcanes</label></li>
+            <li><label><input type="checkbox" name="actividad" value="Rafting"> Rafting</label></li>
+            <li><label><input type="checkbox" name="actividad" value="Quads"> Quads</label></li>
+            <li><label><input type="checkbox" name="actividad" value="Kayak"> Kayak</label></li>
+
+            <!-- Ocultas -->
+            <li class="hidden-actividad" style="display: none;"><label><input type="checkbox" name="actividad"
+                  value="Parapente"> Parapente</label></li>
+            <li class="hidden-actividad" style="display: none;"><label><input type="checkbox" name="actividad"
+                  value="Templos"> Templos</label></li>
+            <li class="hidden-actividad" style="display: none;"><label><input type="checkbox" name="actividad"
+                  value="Spa"> Spa</label></li>
+
+            <a href="#" class="filters__more">Ver más</a>
+          </ul>
+
+        </div>
+
+        <!-- Alojamiento -->
+        <div class="filters__block">
+          <button class="filters__toggle"><i class="fa-solid fa-building"></i>Alojamiento <i
+              class="fa-solid fa-chevron-right"></i></button>
+          <ul class="filters__list">
+            <li><label><input type="checkbox" name="alojamiento" value="Hotel"> Hotel</label></li>
+            <li><label><input type="checkbox" name="alojamiento" value="Apartamento"> Apartamento</label></li>
+            <li><label><input type="checkbox" name="alojamiento" value="Casa"> Casa</label></li>
+          </ul>
+        </div>
+
+        <!-- Precio -->
+        <div class="filters__block">
+          <button class="filters__toggle"> <i class="fa-solid fa-tag"></i></i>Precio <i
+              class="fa-solid fa-chevron-right"></i></button>
+          <!-- Envuelvo el contenido de Precio en un contenedor que se pueda ocultar/mostrar -->
+          <div class="filters__list">
+            <div class="filters__price">
+              <label><input type="text" id="precioMin" placeholder="Mínimo"></label>
+              <label><input type="text" id="precioMax" placeholder="Máximo"></label>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- FILTROS PARA MOVIL -->
+      <aside class="trips__filters__mobile__tablet">
+        <button class="filters__toggle__general"><i class="fa-solid fa-filter"></i> Ver filtros </button>
+        <div class="filters__wrapper">
+
+          <!-- Destinos -->
+          <div class="filters__block">
+            <button class="filters__toggle"><i class="fa-solid fa-earth-americas"></i> Destinos <i
+                class="fa-solid fa-chevron-right"></i></button>
+            <ul class="filters__list">
+              <li><label><input type="checkbox" name="destino" value="Indonesia"> Indonesia</label></li>
+              <li><label><input type="checkbox" name="destino" value="Maldivas"> Maldivas</label></li>
+              <li><label><input type="checkbox" name="destino" value="Marruecos"> Marruecos</label></li>
+              <li><label><input type="checkbox" name="destino" value="Tailandia"> Tailandia</label></li>
+            </ul>
+          </div>
+
+          <!-- Aventura -->
+          <div class="filters__block">
+            <button class="filters__toggle"><i class="fa-solid fa-mountain"></i> Aventura <i
+                class="fa-solid fa-chevron-right"></i></button>
+            <ul class="filters__list aventura-list">
+              <li><label><input type="checkbox" name="actividad" value="Buceo"> Buceo</label></li>
+              <li><label><input type="checkbox" name="actividad" value="Snorkel"> Snorkel</label></li>
+              <li><label><input type="checkbox" name="actividad" value="Surf"> Surf</label></li>
+              <li><label><input type="checkbox" name="actividad" value="Volcanes"> Volcanes</label></li>
+              <li><label><input type="checkbox" name="actividad" value="Rafting"> Rafting</label></li>
+              <li><label><input type="checkbox" name="actividad" value="Quads"> Quads</label></li>
+              <li><label><input type="checkbox" name="actividad" value="Kayak"> Kayak</label></li>
+
+              <!-- Ocultas -->
+              <li class="hidden-actividad" style="display: none;"><label><input type="checkbox" name="actividad"
+                    value="Parapente"> Parapente</label></li>
+              <li class="hidden-actividad" style="display: none;"><label><input type="checkbox" name="actividad"
+                    value="Templos"> Templos</label></li>
+              <li class="hidden-actividad" style="display: none;"><label><input type="checkbox" name="actividad"
+                    value="Spa"> Spa</label></li>
+
+              <a href="#" class="filters__more">Ver más</a>
+            </ul>
+          </div>
+
+          <!-- Alojamiento -->
+          <div class="filters__block">
+            <button class="filters__toggle"><i class="fa-solid fa-building"></i> Alojamiento <i
+                class="fa-solid fa-chevron-right"></i></button>
+            <ul class="filters__list">
+              <li><label><input type="checkbox" name="alojamiento" value="Hotel"> Hotel</label></li>
+              <li><label><input type="checkbox" name="alojamiento" value="Apartamento"> Apartamento</label></li>
+              <li><label><input type="checkbox" name="alojamiento" value="Casa"> Casa</label></li>
+            </ul>
+          </div>
+
+          <!-- Precio -->
+          <div class="filters__block">
+            <button class="filters__toggle"><i class="fa-solid fa-tag"></i>Precio <i
+                class="fa-solid fa-chevron-right"></i></button>
+            <div class="filters__list">
+              <div class="filters__price">
+                <label><input type="text" id="precioMin" placeholder="Mínimo"></label>
+                <label><input type="text" id="precioMax" placeholder="Máximo"></label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Mensaje si no hay resultados -->
+      <div class="no-results-message"
+        style="display: none; font-size: 1.2em; color: #777; margin-top: 2em; text-align: center;">
+        No se han encontrado resultados.
+      </div>
+
+
+      <!-- Tarjetas de viaje -->
+      <div class="trips__container grid">
+
+        <div class="trip__card" data-destino="Marruecos" data-actividad="Quads" data-alojamiento="Hotel"
+          data-precio="248">
+          <div class="trip__image">
+            <img src="imagenes/quads.webp" alt="Quads" class="trip__img" />
+            <span class="trip__label"></span>
+          </div>
+          <div class="trip__content">
+            <div class="trip__info">
+              <h3 class="trip__destination">Marruecos, África · 9 días</h3>
+              <h4 class="trip__title">Descubre Bangkok con Iberojet</h4>
+              <p class="trip__accommodation">Hotel</p>
+            </div>
+       
+            <div class="trip__actions">
+              <div class="trip__actions-left">
+                <p class="trip__price">Desde <br><strong>248,00 €</strong></p>
+                <a href="#" class="trip__details">Ver desglose</a>
+              </div>
+              <div class="trip__actions-right">
+                <a href="#" class="button trip__button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip__card" data-destino="Tailandia" data-actividad="Parapente" data-alojamiento="Apartamento"
+          data-precio="348">
+          <div class="trip__image">
+            <img src="imagenes/parapente.webp" alt="Parapente" class="trip__img" />
+            <span class="trip__label"></span>
+          </div>
+          <div class="trip__content">
+            <div class="trip__info">
+              <h3 class="trip__destination">Tailandia, Asia · 7 días</h3>
+              <h4 class="trip__title">Aventura en Chiang Mai</h4>
+              <p class="trip__accommodation">Apartamento</p>
+            </div>
+
+            <div class="trip__actions">
+              <div class="trip__actions-left">
+                <p class="trip__price">Desde <br><strong>348,00 €</strong></p>
+                <a href="#" class="trip__details">Ver desglose</a>
+              </div>
+              <div class="trip__actions-right">
+                <a href="#" class="button trip__button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip__card" data-destino="Indonesia" data-actividad="Volcanes" data-alojamiento="Apartamento"
+          data-precio="348">
+          <div class="trip__image">
+            <img src="imagenes/volcan.webp" alt="Volcanes" class="trip__img" />
+            <span class="trip__label"></span>
+          </div>
+          <div class="trip__content">
+            <div class="trip__info">
+              <h3 class="trip__destination">Indonesia, Asia · 7 días</h3>
+              <h4 class="trip__title">Aventura en Chiang Mai</h4>
+              <p class="trip__accommodation">Apartamento</p>
+            </div>
+    
+            <div class="trip__actions">
+              <div class="trip__actions-left">
+                <p class="trip__price">Desde <br><strong>348,00 €</strong></p>
+                <a href="#" class="trip__details">Ver desglose</a>
+              </div>
+              <div class="trip__actions-right">
+                <a href="#" class="button trip__button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip__card" data-destino="Maldivas" data-actividad="Snorkel" data-alojamiento="Casa"
+          data-precio="248">
+          <div class="trip__image">
+            <img src="imagenes/snorkel.jpg" alt="Snorkel" class="trip__img" />
+            <span class="trip__label"></span>
+          </div>
+          <div class="trip__content">
+            <div class="trip__info">
+              <h3 class="trip__destination">Maldivas, Asia · 9 días</h3>
+              <h4 class="trip__title">Descubre la esencia de Maldivas</h4>
+              <p class="trip__accommodation">Casa</p>
+            </div>
+    
+            <div class="trip__actions">
+              <div class="trip__actions-left">
+                <p class="trip__price">Desde <br><strong>248,00 €</strong></p>
+                <a href="#" class="trip__details">Ver desglose</a>
+              </div>
+              <div class="trip__actions-right">
+                <a href="#" class="button trip__button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip__card" data-destino="Maldivas" data-actividad="Buceo" data-alojamiento="Hotel"
+          data-precio="248">
+          <div class="trip__image">
+            <img src="imagenes/buceo.webp" alt="Buceo" class="trip__img" />
+            <span class="trip__label"></span>
+          </div>
+          <div class="trip__content">
+            <div class="trip__info">
+              <h3 class="trip__destination">Maldivas, Asia · 15 días</h3>
+              <h4 class="trip__title">Descubre Mantas Rayas</h4>
+              <p class="trip__accommodation">Hotel</p>
+            </div>
+  
+            <div class="trip__actions">
+              <div class="trip__actions-left">
+                <p class="trip__price">Desde <br><strong>248,00 €</strong></p>
+                <a href="#" class="trip__details">Ver desglose</a>
+              </div>
+              <div class="trip__actions-right">
+                <a href="#" class="button trip__button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="e-tour">
+    <header class="e-tour__header">
+      <h2 class="e-tour__title">Los destinos mejor valorados por nuestros clientes</h2>
+      <nav class="e-tour__filters">
+        <ul class="filters-list">
+          <li class="filters-list__item filters-list__item--active"><button data-filter="all">All</button></li>
+          <li class="filters-list__item"><button data-filter="asia">Asia</button></li>
+          <li class="filters-list__item"><button data-filter="europa">Europa</button></li>
+          <li class="filters-list__item"><button data-filter="africa">África</button></li>
+          <li class="filters-list__item"><button data-filter="amsur">América del Norte</button></li>
+          <li class="filters-list__item"><button data-filter="amnorte">América del Sur</button></li>
+          <li class="filters-list__item"><button data-filter="oceania">Oceania</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="offers-container">
+      <ul class="offers-list">
+        <li class="offer-card" data-category="asia">
+          <img src="imagenes/ficha.webp" alt="Bali" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.7</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">Ubud Resort</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Indonesia</p>
+              <span class="offer-card__price">2400€</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="offer-card" data-category="asia">
+          <img src="imagenes/dubai.webp" alt="Dubai" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.8</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">Fly Emirates</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Dubai</p>
+              <span class="offer-card__price">5100€</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="offer-card" data-category="oceania">
+          <img src="imagenes/australia.webp" alt="Australia" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.9</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">Ocean Resort</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Australia</p>
+              <span class="offer-card__price">3600€</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="offer-card" data-category="amnorte">
+          <img src="imagenes/nuevayork.webp" alt="Cruise" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.6</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">The Langham</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Nueva York</p>
+              <span class="offer-card__price">8990€</span>
+            </div>
+          </div>
+        </li>
+        <li class="offer-card" data-category="africa">
+          <img src="imagenes/kenia.webp" alt="Tour" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.4</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">Safari Adventure</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Kenia</p>
+              <span class="offer-card__price">4500€</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="offer-card" data-category="amsur">
+          <img src="imagenes/cacun.webp" alt="Stay" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.2</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">Mountain Cabin</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Cancún</p>
+              <span class="offer-card__price">2700€</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="offer-card" data-category="europa">
+          <img src="imagenes/roma.webp" alt="Car" class="offer-card__image">
+          <span class="offer-card__rating">⭐4.3</span>
+          <div class="offer-card__info">
+            <div class="offer-card__header">
+              <h3 class="offer-card__title">Luxury SUV</h3>
+            </div>
+            <div class="offer-card__details">
+              <p class="offer-card__location">Roma</p>
+              <span class="offer-card__price">5600€</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- CTA personalizado -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <div class="cta-titulo">
+        <h2>Vive la esencia de nuestros viajes</h2>
+        <p>En Aventura sin fronteras, te llevamos más allá de la imaginación con recorridos inmersivos y experiencias
+          diseñadas para soñar, planificar y vivir tu viaje ideal.</p>
+      </div>
+      <div class="cta-boton">
+        <a href="#e-tour" class="button button--terciary">Comienza tu experiencia</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer personalizado -->
+  <section class="footer-section">
+    <footer class="footer">
+      <div class="footer-descripcion">
+        <h4 class="title-footer">Sobre Aventuras sin fronteras</h4>
+        <p>En Aventuras sin fronteras creamos experiencias únicas que conectan a los viajeros con la belleza natural, la
+          serenidad y el lujo en todo el mundo. Desde e-tours hasta paquetes personalizados, somos tu puente hacia el
+          paraíso.</p>
+      </div>
+      <div class="footer-direccion">
+        <h4 class="title-footer">Nuestras Oficinas</h4>
+        <p>Calle Océano Índico 88<br>Sidney, Australia 20026</p>
+        <p>Lunes a Viernes: 9:00 a 18:00 (GMT+5)</p>
+      </div>
+      <div class="footer-contacto">
+        <h4 class="title-footer">Contáctanos</h4>
+        <a href="mailto:info@aventurassinfronteras.com" class="email-link">info@aventurassinfronteras.com</a> <br />
+        <a href="tel:+9601234567" class="email-link">+960 123 4567</a>
+      </div>
+    </footer>
+  </section>
+
+
+
+  <!-- Subfooter -->
+  <section class="sub-footer">
+    <div class="sub-footer-container">
+      <div class="enlaces-legales">
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+      <h5> 2025 Aventuras sin fronteras. Todos los derechos reservados.</h5>
+
+    </div>
+  </section>
+
+
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+
+
+</body>
+
+</html>
